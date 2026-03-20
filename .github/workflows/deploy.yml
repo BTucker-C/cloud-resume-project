@@ -22,9 +22,9 @@ jobs:
 
       - name: Upload site files to S3
         run: |
-          aws s3 cp index.html s3://brandon-tucker-resume/index.html
-          aws s3 cp style.css s3://brandon-tucker-resume/style.css
-          aws s3 cp script.js s3://brandon-tucker-resume/script.js
+          aws s3 cp frontend/index.html s3://brandon-tucker-resume/index.html
+          aws s3 cp frontend/style.css s3://brandon-tucker-resume/style.css
+          aws s3 cp frontend/script.js s3://brandon-tucker-resume/script.js
 
       - name: Invalidate CloudFront cache
         run: |
