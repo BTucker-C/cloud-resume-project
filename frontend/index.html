@@ -1,124 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brandon Tucker - Cloud Resume</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brandon Tucker | Cloud Resume Preview</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+      color: #1f2937;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 40px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+    }
+
+    .resume-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .resume-header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      color: #0f172a;
+    }
+
+    .contact {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #475569;
+    }
+
+    .contact a {
+      color: #0369a1;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 28px;
+    }
+
+    section h2 {
+      font-size: 1.2rem;
+      border-bottom: 2px solid #cbd5e1;
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+      color: #0f172a;
+    }
+
+    .job {
+      margin-bottom: 20px;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .job-header h3 {
+      margin: 0;
+      font-size: 1rem;
+      color: #111827;
+    }
+
+    .job-header span {
+      font-size: 0.95rem;
+      color: #475569;
+    }
+
+    .job-location {
+      margin: 4px 0 8px 0;
+      color: #64748b;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      margin: 8px 0 0 20px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    strong {
+      color: #111827;
+    }
+  
+
+    /* ===== Print Optimization (2-page clean layout) ===== */
+    @media print {
+      body {
+        background: white;
+        font-size: 11pt;
+        line-height: 1.4;
+      }
+
+      .container {
+        box-shadow: none;
+        margin: 0;
+        padding: 10px 20px;
+        max-width: 100%;
+      }
+
+      .resume-header h1 {
+        font-size: 20pt;
+      }
+
+      .contact {
+        font-size: 10pt;
+      }
+
+      section {
+        margin-bottom: 16px;
+      }
+
+      section h2 {
+        font-size: 12pt;
+        margin-bottom: 8px;
+      }
+
+      .job {
+        margin-bottom: 12px;
+      }
+
+      ul {
+        margin: 6px 0 0 16px;
+      }
+
+      li {
+        margin-bottom: 4px;
+      }
+
+      /* Prevent awkward page breaks */
+      .job, section {
+        page-break-inside: avoid;
+      }
+
+      /* Hide visitor counter */
+      .counter-line {
+        display: none;
+      }
+    }
+
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header class="resume-header">
-            <h1>Brandon Tucker</h1>
-            <p class="contact">
-                Oak Ridge, TN |
-                <a href="mailto:brandontucker@comcast.net">brandontucker@comcast.net</a> |
-                <a href="https://github.com/BTucker-C" target="_blank" rel="noopener noreferrer">GitHub</a> |
-                <a href="https://resume.brandon-tucker.com/" target="_blank" rel="noopener noreferrer">Portfolio</a>
-            </p>
-            <p class="counter-line">Visitor Count: <span id="counter">Loading...</span></p>
-        </header>
+  <div class="container">
+    <header class="resume-header">
+      <h1>Brandon Tucker</h1>
+      <p class="contact">
+        Oak Ridge, TN |
+        <a href="mailto:brandontucker@comcast.net">brandontucker@comcast.net</a> |
+        <a href="https://github.com/BTucker-C" target="_blank">GitHub</a> |
+        <a href="https://resume.brandon-tucker.com/" target="_blank">Portfolio</a>
+      </p>
+    </header>
 
-        <section>
-            <h2>Summary</h2>
-            <p>
-                IT professional with 10+ years of experience in technical support, networking, and system administration, now focused on cloud engineering.
-                Hands-on experience designing and deploying AWS-based serverless applications using Terraform, GitHub, and Python.
-                Strong foundation in troubleshooting distributed systems, networking, and security.
-            </p>
-        </section>
+    <section>
+      <h2>Summary</h2>
+      <p>
+        IT professional with 10+ years of experience in technical support, networking, and system administration, now focused on cloud engineering. Hands-on experience designing and deploying AWS-based serverless applications using Terraform, GitHub, and Python. Strong foundation in troubleshooting distributed systems, networking, and security.
+      </p>
+    </section>
 
-        <section>
-            <h2>Technical Skills</h2>
-            <ul>
-                <li><strong>Cloud &amp; DevOps:</strong> AWS (S3, CloudFront, Lambda, DynamoDB, IAM), Terraform, GitHub, CI/CD</li>
-                <li><strong>Programming/Scripting:</strong> Python (basic), SQL</li>
-                <li><strong>Systems &amp; Networking:</strong> Windows, Linux (basic), TCP/IP, DNS, routing</li>
-                <li><strong>Tools:</strong> ServiceNow, Remedy, Active Directory, Office 365</li>
-                <li><strong>Concepts:</strong> REST APIs, Serverless Architecture, Infrastructure as Code (IaC), IAM, least privilege</li>
-            </ul>
-        </section>
+    <section>
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Cloud &amp; DevOps:</strong> AWS (S3, CloudFront, Lambda, DynamoDB, IAM), Terraform, GitHub, CI/CD</li>
+        <li><strong>Programming/Scripting:</strong> Python (basic), SQL</li>
+        <li><strong>Systems &amp; Networking:</strong> Windows, Linux (basic), TCP/IP, DNS, routing</li>
+        <li><strong>Tools:</strong> ServiceNow, Remedy, Active Directory, Office 365</li>
+        <li><strong>Concepts:</strong> REST APIs, Serverless Architecture, Infrastructure as Code (IaC), IAM, least privilege</li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>Projects</h2>
-            <div class="entry">
-                <div class="entry-header">
-                    <h3>Cloud Resume Project</h3>
-                    <span>AWS • Terraform • Python</span>
-                </div>
-                <ul>
-                    <li>Designed a serverless architecture using CloudFront, S3, API Gateway, Lambda, and DynamoDB.</li>
-                    <li>Implemented backend logic in Python via AWS Lambda.</li>
-                    <li>Provisioned infrastructure using Terraform for repeatable deployments.</li>
-                    <li>Configured IAM roles and resolved permission issues across AWS services.</li>
-                    <li>Validated the full request lifecycle across distributed AWS components.</li>
-                </ul>
-            </div>
-        </section>
+    <section>
+      <h2>Projects</h2>
+      <div class="job">
+        <div class="job-header">
+          <h3>Cloud Resume Project</h3>
+          <span>AWS • Terraform • Python</span>
+        </div>
+        <ul>
+          <li>Designed a serverless architecture using CloudFront, S3, API Gateway, Lambda, and DynamoDB.</li>
+          <li>Implemented backend logic in Python via AWS Lambda.</li>
+          <li>Provisioned infrastructure using Terraform for repeatable deployments.</li>
+          <li>Configured IAM roles and resolved permission issues across AWS services.</li>
+          <li>Validated the full request lifecycle across distributed AWS components.</li>
+        </ul>
+      </div>
+    </section>
 
-        <section>
-            <h2>Professional Experience</h2>
+    <section>
+      <h2>Professional Experience</h2>
 
-            <div class="entry">
-                <div class="entry-header">
-                    <h3>SAIC (Contract for FERC) — Senior Help Desk Agent</h3>
-                    <span>Oct 2020 – Present</span>
-                </div>
-                <p class="entry-location">Oak Ridge, TN</p>
-                <ul>
-                    <li>Resolved enterprise Windows issues and managed tickets via ServiceNow.</li>
-                    <li>Troubleshot access, permissions, and application-related issues.</li>
-                    <li>Supported users in a security-conscious environment requiring consistent issue triage and coordination.</li>
-                </ul>
-            </div>
+      <div class="job">
+        <div class="job-header">
+          <h3>SAIC (Contract for FERC) — Senior Help Desk Agent</h3>
+          <span>Oct 2020 – Present</span>
+        </div>
+        <p class="job-location">Oak Ridge, TN</p>
+        <ul>
+          <li>Resolved enterprise Windows issues and managed tickets via ServiceNow.</li>
+          <li>Troubleshot access, permissions, and application-related issues.</li>
+          <li>Supported users in a security-conscious environment requiring consistent issue triage and coordination.</li>
+        </ul>
+      </div>
 
-            <div class="entry">
-                <div class="entry-header">
-                    <h3>Twin Lakes Telephone Cooperative — Help Desk Agent</h3>
-                    <span>May 2018 – Aug 2020</span>
-                </div>
-                <p class="entry-location">Cookeville, TN</p>
-                <ul>
-                    <li>Diagnosed network and connectivity issues across fiber and copper infrastructure.</li>
-                    <li>Configured routers and supported end-user systems.</li>
-                    <li>Investigated latency and performance issues and provided Tier 2 support.</li>
-                </ul>
-            </div>
+      <div class="job">
+        <div class="job-header">
+          <h3>Twin Lakes Telephone Cooperative — Help Desk Agent</h3>
+          <span>May 2018 – Aug 2020</span>
+        </div>
+        <p class="job-location">Cookeville, TN</p>
+        <ul>
+          <li>Diagnosed network and connectivity issues across fiber and copper infrastructure.</li>
+          <li>Configured routers and supported end-user systems.</li>
+          <li>Investigated latency and performance issues and provided Tier 2 support.</li>
+        </ul>
+      </div>
 
-            <div class="entry">
-                <div class="entry-header">
-                    <h3>United States Navy — Information Systems Technician (E5)</h3>
-                    <span>Sep 2011 – Sep 2015</span>
-                </div>
-                <p class="entry-location">Jacksonville, FL</p>
-                <ul>
-                    <li>Administered Unix-based systems supporting mission-critical operations.</li>
-                    <li>Managed satellite communications across SHF, UHF, and EHF transmission bands.</li>
-                    <li>Led a small team enforcing network security protocols and maintaining system reliability.</li>
-                </ul>
-            </div>
-        </section>
+      <div class="job">
+        <div class="job-header">
+          <h3>United States Navy — Information Systems Technician (E5)</h3>
+          <span>Sep 2011 – Sep 2015</span>
+        </div>
+        <p class="job-location">Jacksonville, FL</p>
+        <ul>
+          <li>Administered Unix-based systems supporting mission-critical operations.</li>
+          <li>Managed satellite communications across SHF, UHF, and EHF transmission bands.</li>
+          <li>Led a small team enforcing network security protocols and maintaining system reliability.</li>
+        </ul>
+      </div>
+    </section>
 
-        <section>
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Tennessee Technological University</strong> — MBA, Management Information Systems (Dec 2020)</li>
-                <li><strong>Tennessee Technological University</strong> — BSBA, Management Information Systems (May 2019)</li>
-            </ul>
-        </section>
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Tennessee Technological University</strong> — MBA, Management Information Systems (Dec 2020)</li>
+        <li><strong>Tennessee Technological University</strong> — BSBA, Management Information Systems (May 2019)</li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>Certifications</h2>
-            <ul>
-                <li>CompTIA A+</li>
-                <li>CompTIA Network+</li>
-                <li>HDI-SCA</li>
-                <li>AWS Certified Solutions Architect – Associate (Expired)</li>
-                <li>CompTIA Security+ (Expired)</li>
-            </ul>
-        </section>
-    </div>
-
-    <script src="script.js"></script>
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>CompTIA A+</li>
+        <li>CompTIA Network+</li>
+        <li>HDI-SCA</li>
+        <li>AWS Certified Solutions Architect – Associate (Expired)</li>
+        <li>CompTIA Security+ (Expired)</li>
+      </ul>
+    </section>
+  </div>
 </body>
 </html>
