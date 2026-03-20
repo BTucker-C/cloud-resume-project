@@ -1,29 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brandon Tucker - Cloud Resume</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <div class="container">
+        <header class="resume-header">
+            <h1>Brandon Tucker</h1>
+            <p class="contact">
+                Oak Ridge, TN |
+                <a href="mailto:brandontucker@comcast.net">brandontucker@comcast.net</a> |
+                <a href="https://github.com/BTucker-C" target="_blank" rel="noopener noreferrer">GitHub</a> |
+                <a href="https://resume.brandon-tucker.com/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+            </p>
+            <p class="counter-line">Visitor Count: <span id="counter">Loading...</span></p>
+        </header>
 
-<h1>Brandon Tucker</h1>
-<h2>Aspiring Cloud Engineer</h2>
+        <section>
+            <h2>Summary</h2>
+            <p>
+                IT professional with 10+ years of experience in technical support, networking, and system administration, now focused on cloud engineering.
+                Hands-on experience designing and deploying AWS-based serverless applications using Terraform, GitHub, and Python.
+                Strong foundation in troubleshooting distributed systems, networking, and security.
+            </p>
+        </section>
 
-<p>
-IT professional with 10 years of experience in service desk operations and systems support.
-Currently building cloud engineering projects using AWS and modern infrastructure tools.
-</p>
+        <section>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Cloud &amp; DevOps:</strong> AWS (S3, CloudFront, Lambda, DynamoDB, IAM), Terraform, GitHub, CI/CD</li>
+                <li><strong>Programming/Scripting:</strong> Python (basic), SQL</li>
+                <li><strong>Systems &amp; Networking:</strong> Windows, Linux (basic), TCP/IP, DNS, routing</li>
+                <li><strong>Tools:</strong> ServiceNow, Remedy, Active Directory, Office 365</li>
+                <li><strong>Concepts:</strong> REST APIs, Serverless Architecture, Infrastructure as Code (IaC), IAM, least privilege</li>
+            </ul>
+        </section>
 
-<p>
-Project: Cloud Resume Challenge
-</p>
+        <section>
+            <h2>Projects</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <h3>Cloud Resume Project</h3>
+                    <span>AWS • Terraform • Python</span>
+                </div>
+                <ul>
+                    <li>Designed a serverless architecture using CloudFront, S3, API Gateway, Lambda, and DynamoDB.</li>
+                    <li>Implemented backend logic in Python via AWS Lambda.</li>
+                    <li>Provisioned infrastructure using Terraform for repeatable deployments.</li>
+                    <li>Configured IAM roles and resolved permission issues across AWS services.</li>
+                    <li>Validated the full request lifecycle across distributed AWS components.</li>
+                </ul>
+            </div>
+        </section>
 
-<p>
-Visitor Count: <span id="counter">Loading...</span>
-</p>
+        <section>
+            <h2>Professional Experience</h2>
 
-<script src="script.js"></script>
+            <div class="entry">
+                <div class="entry-header">
+                    <h3>SAIC (Contract for FERC) — Senior Help Desk Agent</h3>
+                    <span>Oct 2020 – Present</span>
+                </div>
+                <p class="entry-location">Oak Ridge, TN</p>
+                <ul>
+                    <li>Resolved enterprise Windows issues and managed tickets via ServiceNow.</li>
+                    <li>Troubleshot access, permissions, and application-related issues.</li>
+                    <li>Supported users in a security-conscious environment requiring consistent issue triage and coordination.</li>
+                </ul>
+            </div>
 
+            <div class="entry">
+                <div class="entry-header">
+                    <h3>Twin Lakes Telephone Cooperative — Help Desk Agent</h3>
+                    <span>May 2018 – Aug 2020</span>
+                </div>
+                <p class="entry-location">Cookeville, TN</p>
+                <ul>
+                    <li>Diagnosed network and connectivity issues across fiber and copper infrastructure.</li>
+                    <li>Configured routers and supported end-user systems.</li>
+                    <li>Investigated latency and performance issues and provided Tier 2 support.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <h3>United States Navy — Information Systems Technician (E5)</h3>
+                    <span>Sep 2011 – Sep 2015</span>
+                </div>
+                <p class="entry-location">Jacksonville, FL</p>
+                <ul>
+                    <li>Administered Unix-based systems supporting mission-critical operations.</li>
+                    <li>Managed satellite communications across SHF, UHF, and EHF transmission bands.</li>
+                    <li>Led a small team enforcing network security protocols and maintaining system reliability.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Tennessee Technological University</strong> — MBA, Management Information Systems (Dec 2020)</li>
+                <li><strong>Tennessee Technological University</strong> — BSBA, Management Information Systems (May 2019)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li>CompTIA A+</li>
+                <li>CompTIA Network+</li>
+                <li>HDI-SCA</li>
+                <li>AWS Certified Solutions Architect – Associate (Expired)</li>
+                <li>CompTIA Security+ (Expired)</li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

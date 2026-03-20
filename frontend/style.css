@@ -1,13 +1,113 @@
 body {
+    margin: 0;
+    padding: 0;
+    background: #f4f6f8;
+    color: #1f2937;
     font-family: Arial, sans-serif;
-    margin: 40px;
-    background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
-h1 {
-    color: #333;
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 40px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
 }
 
-h2 {
-    color: #555;
+.resume-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.resume-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #0f172a;
+}
+
+.contact {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #475569;
+}
+
+.contact a {
+    color: #0369a1;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.counter-line {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    color: #475569;
+}
+
+section {
+    margin-bottom: 28px;
+}
+
+section h2 {
+    font-size: 1.2rem;
+    border-bottom: 2px solid #cbd5e1;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+    color: #0f172a;
+}
+
+.entry {
+    margin-bottom: 20px;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.entry-header h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #111827;
+}
+
+.entry-header span {
+    font-size: 0.95rem;
+    color: #475569;
+}
+
+.entry-location {
+    margin: 4px 0 8px 0;
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+ul {
+    margin: 8px 0 0 20px;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+strong {
+    color: #111827;
+}
+
+@media (max-width: 700px) {
+    .container {
+        margin: 20px;
+        padding: 24px;
+    }
+
+    .resume-header h1 {
+        font-size: 1.8rem;
+    }
 }
