@@ -111,3 +111,9 @@ strong {
         font-size: 1.8rem;
     }
 }
+
+@media print {
+  .counter-line {
+    display: none;
+  }
+}
