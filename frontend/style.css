@@ -116,4 +116,14 @@ strong {
   .counter-line {
     display: none;
   }
+  
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .job-header h3 {
+    margin: 0;
+  }
 }
