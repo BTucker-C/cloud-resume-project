@@ -113,11 +113,12 @@ strong {
 }
 
 @media print {
-  .counter-line {
+    .counter-line {
     display: none;
   }
 
-    .job-header h3 {
-    font-size: 0.95rem;
+    .print-break {
+    display: block;
+    margin-left: 0.5rem;
   }
 }
